@@ -1,0 +1,65 @@
+zadacha 1 
+
+#include <iostream.h>
+
+using namespace std;
+
+int main ()
+{
+int i;
+string ball;
+queue <string> balls;
+for(i=0; i<5; i++)
+{
+cout << " Push ball: ";
+cin >> ball;
+balls.push(ball);
+}
+while (!balls.empty())
+{
+ball=balls.front()
+if(ball !="white")
+{
+cout << ball << endl;
+balls.pop();
+if(balls.empty())
+{
+cout << "There is no white ball!\n";
+break;
+}
+{
+else
+}
+cout << "White ball! > Stop Popping.\n";
+break;
+}
+}
+return 0;
+}
+
+
+zadacha 2 
+
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+float R1,R2,Rp;
+cout << "\nPlease enter value of R1";
+cin >> R1;
+cout << "\nPlease enter value of R2";
+cin >> R2;
+if(R1+R2==0)
+{
+cout << "\nError:Result cannot be calculated";
+}
+else
+{
+Rp=R1*R2/(R1+R2);
+cout << "\nThe value is ";
+cout << Rp;
+}
+return 0;
+}
